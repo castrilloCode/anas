@@ -32,12 +32,12 @@ h2 {
 }
 
 h3 {
-  color: #dedddd;
+  color: #ffffff;
   font-size: 4.3em;
   font-family: "Imperial Script", cursive;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  text-shadow: 0 0.5 3px #000;
+  text-shadow: 0 0 5px #000;
 }
 
 h4 {
@@ -69,7 +69,7 @@ h4 {
 /* Buttons */
 .button {
   display: inline-block;
-  background-color: #e7e7e7;
+  background-color: #f7f7f7;
   color: black;
   padding: 16px 28px;
   margin: 12px 0;
@@ -120,8 +120,8 @@ h4 {
 .dateCountdown,
 .notice {
   font-size: 1.1em;
-  color: rgb(69, 130, 244);
-  text-shadow: 0 0 2px #000;
+  color: rgb(96, 152, 255);
+  text-shadow: 0 0 5px #000;
   margin: 8px 0;
 }
 
