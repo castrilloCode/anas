@@ -120,6 +120,7 @@ h4 {
 .dateCountdown,
 .notice {
   font-size: 1.1em;
+  font-weight: bold;
   color: rgb(96, 152, 255);
   text-shadow: 0 0 5px #000;
   margin: 8px 0;
