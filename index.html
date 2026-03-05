@@ -68,22 +68,21 @@
 
     <img src="assets/anas.gif" alt="perfil" class="event-img" loading="eager" />
     <h3>Anastasia</h3>
-    <div class="dateCountdown">25 de julho 2026 desde 18h até as 22h</div>
+    <div class="dateCountdown">18 de julho 2026 desde 18h até as 23h</div>
     <div class="countdown" id="countdown"></div>
 
     <a class="button neon glow-border"
-      href="https://wa.me/351962400298?text=Confirmo%20minha%20assist%C3%AAncia%20e%20tomo%20conta%20das%20seguintes%20informa%C3%A7%C3%B5es%20que%20para%20a%20minha%20participa%C3%A7%C3%A3o,%20tenho%20de:%0A•%20Ir%20vestido/a%20de%20branco.%0A•%20Levar%20todas%20as%20minhas%20bebidas,%20gelo%20e%20mala%20t%C3%A9rmica."
+      href="https://wa.me/351962400298?text=Confirmo%20minha%20presen%C3%A7a.%0A%0A•%20Dress%20code:%20branco%20obrigat%C3%B3rio.%0A•%20Data:%2018%20de%20julho%20de%202026%0A•%20Hor%C3%A1rio:%2018h00%20-%2023h00%0A•%20Haverá%20cerveja,%20sidra,%20refrigerantes%20e%20%C3%A1gua%20dispon%C3%ADveis.%0A•%20Se%20quero%20beber%20algo%20diferente,%20fica%20por%20minha%20conta.%20%0A%0AMal%20posso%20esperar%20para%20celebrar%20contigo."
       target="_blank">
-      Confirmar Assistência
+      Confirmar Assistência <br> (Até 1 de julho)
     </a>
-    <div class="notice">(Até 1 de julho)</div>
 
     <div class="button-container">
-      <a class="button" href="dress-code.html">
+      <!-- <a class="button" href="dress-code.html">
         Dress Code 👗
-      </a>
-      <a class="button" href="https://maps.app.goo.gl/3v67cheJxktZ16eQ9" target="_blank">
-        Endereço: Quinta do Paraíso 54
+      </a> -->
+      <a class="button" href="https://maps.app.goo.gl/GAPafW21fNis3mdLA" target="_blank">
+        📍 Endereço
       </a>
       <a class="button" href="javascript:void(0)" onclick="addToGoogleCalendar()" id="calendar-btn">
         Adicionar ao meu calendário
@@ -139,7 +138,7 @@
 
     // Countdown timer
     const countdownElement = document.getElementById("countdown");
-    const eventDate = new Date("2026-07-25T18:00:00");
+    const eventDate = new Date("2026-07-18T18:00:00");
 
     function updateCountdown() {
       const now = new Date();
@@ -244,11 +243,11 @@
     // Google Calendar function
     function addToGoogleCalendar() {
       const title = "🎉 Anastasia Party - 15 Anos";
-      const startDate = "20260725T180000";
-      const endDate = "20260725T220000";
-      const location = "Quinta do Paraíso 54";
+      const startDate = "20260718T190000";
+      const endDate = "20260718T230000";
+      const location = "Escola de dança, ARTE EM MOVIMENTO";
       const details =
-        "És nosso convidado especial!%0A%0ARegras:%0A• Vir vestido de branco.%0A• Levar bebidas, gelo e mala térmica.";
+        "És nosso convidado especial!%0A%0ARegras:%0A• Vir vestido de branco.%0A• Teremos cerveja, sidra, refrigerantes e água disponíveis.%0A%0Se quiseres beber algo diferente, fica por tua conta 😉";
 
       const calendarUrl =
         `https://www.google.com/calendar/render?action=TEMPLATE` +
