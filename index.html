@@ -1,264 +1,341 @@
 <!doctype html>
 <html lang="pt">
-<!doctype html>
-<html lang="pt">
 
 <head>
   <meta charset="UTF-8" />
+
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="theme-color" content="#000000" />
+  <meta name="format-detection" content="telephone=no">
 
-  <!-- === SEO & SOCIAL SHARING METADATA === -->
   <title>🎉 Convite ao Anastasia Party</title>
 
-  <!-- Favicon: Emoji 🎉 -->
+  <!-- Favicon -->
   <link rel="icon"
     href="image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎉</text></svg>"
     type="image/svg+xml" />
+
   <link rel="alternate icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f389.png"
     type="image/png" sizes="32x32" />
 
-  <!-- Open Graph / Social Sharing -->
+  <!-- Open Graph -->
   <meta property="og:title" content="🎉 Convite ao Anastasia Party" />
   <meta property="og:description" content="És nosso convidado especial! — Anastasia faz 15!" />
-  <!-- emoji 🥳 of preview -->
   <meta property="og:image" content="https://castrillocode.github.io/djpapi/assets/emoji_festa.png" />
   <meta property="og:url" content="https://castrillocode.github.io/djpapi/" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter Card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="🎉 Convite ao Anastasia Party" />
   <meta name="twitter:description" content="És nosso convidado especial! — Anastasia faz 15!" />
-  <!-- emoji 🥳 for Twitter -->
   <meta name="twitter:image" content="https://castrillocode.github.io/djpapi/assets/emoji_festa.png" />
 
-  <!-- Preload critical assets -->
+  <!-- Preload -->
   <link rel="preload" href="assets/envelope.png" as="image" />
   <link rel="preload" href="assets/anas.gif" as="image" />
-  <link rel="preload" href="assets/music.mp3" as="audio" />
+  <link rel="preload" href="assets/music.mp3" as="audio" type="audio/mpeg" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles/styles.css" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-  <!-- Intro screen with animated envelope -->
+
+  <!-- Intro screen -->
   <div id="intro-screen">
+
     <h2>
-      Um convite especial <br />
+      Um convite especial <br>
       está a chegar 🎉
     </h2>
-    <img src="assets/envelope.png" alt="Click to open" id="envelope" class="envelope-img" loading="eager" />
-    <div class="click-text">👆<br />Click</div>
+
+    <img src="assets/envelope.png" alt="Abrir convite" id="envelope" class="envelope-img" loading="eager">
+
+    <div class="click-text">
+      👆<br>Click
+    </div>
+
     <div id="flash"></div>
+
   </div>
 
   <!-- Main content -->
-  <div id="main-content" style="display: none">
+
+  <div id="main-content" style="display:none">
+
     <h1>Estás convidado para o meu aniversário</h1>
     <h4>Faço 15 anos</h4>
 
-    <img src="assets/anas.gif" alt="perfil" class="event-img" loading="eager" />
+    <img src="assets/anas.gif" alt="Anastasia celebrando seus 15 anos" class="event-img" loading="eager">
+
     <h3>Anastasia</h3>
-    <div class="dateCountdown">18 de julho 2026 desde 18h até as 23h</div>
+
+    <div class="dateCountdown">
+      18 de julho 2026 desde 18h até as 23h
+    </div>
+
     <div class="countdown" id="countdown"></div>
 
+    <!-- Confirm button -->
+
     <a class="button neon glow-border"
-      href="https://wa.me/351962400298?text=Confirmo%20minha%20presen%C3%A7a.%0A%0A•%20Dress%20code:%20branco%20obrigat%C3%B3rio.%0A•%20Data:%2018%20de%20julho%20de%202026%0A•%20Hor%C3%A1rio:%2018h00%20-%2023h00%0A•%20Haverá%20cerveja,%20sidra,%20refrigerantes%20e%20%C3%A1gua%20dispon%C3%ADveis.%0A•%20Se%20quero%20beber%20algo%20diferente,%20fica%20por%20minha%20conta.%20%0A%0AMal%20posso%20esperar%20para%20celebrar%20contigo."
+      href="https://wa.me/351962400298?text=Confirmo%20minha%20presen%C3%A7a.%0A%0ADress%20code:%20branco%20obrigat%C3%B3rio.%0A%0AHaver%C3%A1%20cerveja,%20sidra,%20refrigerantes%20e%20%C3%A1gua%20dispon%C3%ADveis.%0ASe%20quiser%20beber%20algo%20diferente,%20fica%20por%20tua%20conta.%0A%0AData:%2018%20de%20julho%20de%202026%0AHor%C3%A1rio:%2018h00%20-%2023h00.%0A%0ALocal:%20Escola%20de%20Dan%C3%A7a%20ARTE%20EM%20MOVIMENTO.%0Ahttps://maps.app.goo.gl/GAPafW21fNis3mdLA"
       target="_blank">
-      Confirmar Assistência <br> (Até 1 de julho)
+
+      Confirmar Assistência <br>
+      (Até 1 de julho)
+
     </a>
 
     <div class="button-container">
-      <!-- <a class="button" href="dress-code.html">
-        Dress Code 👗
-      </a> -->
+
       <a class="button" href="https://maps.app.goo.gl/GAPafW21fNis3mdLA" target="_blank">
+
         📍 Endereço
+
       </a>
-      <a class="button" href="javascript:void(0)" onclick="addToGoogleCalendar()" id="calendar-btn">
+
+      <a class="button" href="javascript:void(0)" onclick="addToGoogleCalendar()">
+
         Adicionar ao meu calendário
+
       </a>
+
     </div>
 
     <footer>
+
       Designed by
+
       <a href="https://www.instagram.com/rocacreatives/?hl=pt" target="_blank">
+
         Roca Creatives
+
       </a>
+
     </footer>
 
     <div class="disco-lights" id="disco-lights"></div>
+
   </div>
 
   <!-- Background music -->
-  <audio id="bg-music" src="assets/music.mp3" preload="auto" loop></audio>
 
-  <!-- Scripts -->
+  <audio id="bg-music" src="assets/music.mp3" preload="auto" loop>
+  </audio>
+
   <script>
-    // DOM elements
+
     const envelope = document.getElementById("envelope");
     const intro = document.getElementById("intro-screen");
     const main = document.getElementById("main-content");
     const music = document.getElementById("bg-music");
     const flash = document.getElementById("flash");
 
-    // Open invitation and launch confetti after intro disappears
     envelope.addEventListener("click", () => {
-      // Play music
-      music.play().catch((e) => {
-        console.log("Autoplay blocked, but user interacted", e);
-      });
 
-      // Add animation to envelope
+      envelope.style.pointerEvents = "none";
+
+      music.play().catch(() => { });
+
       envelope.classList.add("open");
 
-      // Flash effect
       flash.style.display = "block";
       flash.classList.add("flash-animate");
 
-      // Hide intro and show main content
       setTimeout(() => {
+
         intro.style.display = "none";
         main.style.display = "block";
         document.body.style.overflowY = "auto";
 
-        // ✅ Launch confetti ONLY after intro is gone
         launchConfetti();
-      }, 900);
+
+      }, 900)
+
     });
 
-    // Countdown timer
     const countdownElement = document.getElementById("countdown");
     const eventDate = new Date("2026-07-18T18:00:00");
 
     function updateCountdown() {
+
       const now = new Date();
       const diff = eventDate - now;
+
       if (diff <= 0) {
-        countdownElement.innerHTML = "🎉 A festa começou!";
+        countdownElement.innerHTML = "A festa começou!";
         return;
       }
+
       const days = Math.floor(diff / (1000 * 60 * 60 * 24));
       const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
       const minutes = Math.floor((diff / (1000 * 60)) % 60);
       const seconds = Math.floor((diff / 1000) % 60);
-      countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+      countdownElement.innerHTML =
+        `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
     }
 
     setInterval(updateCountdown, 1000);
     updateCountdown();
 
-    // Disco lights
     const discoContainer = document.getElementById("disco-lights");
-    const colors = ["#ffb3ff", "#b3ffff", "#ffe6b3", "#d9b3ff", "#b3ffb3"];
+
+    const colors = [
+      "#ffb3ff",
+      "#b3ffff",
+      "#ffe6b3",
+      "#d9b3ff",
+      "#b3ffb3"
+    ];
 
     function createLight() {
+
       const light = document.createElement("div");
+
       light.classList.add("light");
+
       light.style.left = Math.random() * 100 + "%";
       light.style.top = Math.random() * 100 + "%";
+
       light.style.backgroundColor =
         colors[Math.floor(Math.random() * colors.length)];
-      light.style.animationDuration = 1 + Math.random() * 2 + "s";
-      light.style.width = light.style.height = 8 + Math.random() * 12 + "px";
+
+      light.style.animationDuration =
+        1 + Math.random() * 2 + "s";
+
+      light.style.width =
+        light.style.height =
+        8 + Math.random() * 12 + "px";
+
       discoContainer.appendChild(light);
 
       setTimeout(() => {
-        if (light.parentNode) discoContainer.removeChild(light);
-      }, 3000);
+
+        if (light.parentNode)
+          discoContainer.removeChild(light)
+
+      }, 3000)
+
     }
 
-    const isMobile = window.innerWidth <= 768;
-    setInterval(createLight, isMobile ? 500 : 300);
+    setInterval(createLight, 500);
 
-    // Confetti effect
     function launchConfetti() {
-      try {
-        const confettiColors = ["#4caf50", "#ffeb3b", "#ff5722", "#03a9f4", "#e91e63"];
-        const confettiCount = isMobile ? 80 : 120;
 
-        // Remove any existing confetti
-        const existing = document.querySelector(".confetti-container");
-        if (existing) existing.remove();
+      const confettiColors = [
+        "#4caf50",
+        "#ffeb3b",
+        "#ff5722",
+        "#03a9f4",
+        "#e91e63"
+      ];
 
-        const container = document.createElement("div");
-        container.className = "confetti-container";
-        Object.assign(container.style, {
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          pointerEvents: "none",
-          zIndex: "1000",
+      const container = document.createElement("div");
+
+      container.className = "confetti-container";
+
+      Object.assign(container.style, {
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        pointerEvents: "none",
+        zIndex: "1000"
+      });
+
+      document.body.appendChild(container);
+
+      for (let i = 0; i < 80; i++) {
+
+        const piece = document.createElement("div");
+
+        Object.assign(piece.style, {
+          position: "absolute",
+          width: `${Math.random() * 8 + 4}px`,
+          height: `${Math.random() * 8 + 4}px`,
+          backgroundColor:
+            confettiColors[Math.floor(Math.random() * confettiColors.length)],
+          top: `${Math.random() * 100}%`,
+          left: `${Math.random() * 100}%`,
+          opacity: Math.random(),
+          transform: `rotate(${Math.random() * 360}deg)`,
+          animation: `fall ${Math.random() * 3 + 2}s ease-out forwards`
         });
-        document.body.appendChild(container);
 
-        // Create confetti pieces
-        for (let i = 0; i < confettiCount; i++) {
-          const piece = document.createElement("div");
-          Object.assign(piece.style, {
-            position: "absolute",
-            width: `${Math.random() * 8 + 4}px`,
-            height: piece.style.width,
-            backgroundColor:
-              confettiColors[Math.floor(Math.random() * confettiColors.length)],
-            top: `${Math.random() * 100}%`,
-            left: `${Math.random() * 100}%`,
-            opacity: Math.random(),
-            transform: `rotate(${Math.random() * 360}deg)`,
-            animation: `fall ${Math.random() * 3 + 2}s ease-out forwards`,
-          });
-          container.appendChild(piece);
-        }
+        container.appendChild(piece);
 
-        // Clean up after animation
-        setTimeout(() => {
-          if (container.parentNode) document.body.removeChild(container);
-        }, 4000);
-      } catch (e) {
-        console.warn("Confetti failed", e);
       }
+
+      setTimeout(() => {
+
+        if (container.parentNode)
+          container.remove()
+
+      }, 4000)
+
     }
 
-    // Add animation keyframes for confetti
     const style = document.createElement("style");
+
     style.textContent = `
-        @keyframes fall {
-          0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
-          100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
-        }
-      `;
+      @keyframes fall {
+        0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+      }
+    `;
+
     document.head.appendChild(style);
 
-    // Google Calendar function
     function addToGoogleCalendar() {
-      const title = "🎉 Anastasia Party - 15 Anos";
-      const startDate = "20260718T190000";
+
+      const title = "Anastasia — Festa de 15 Anos";
+
+      const startDate = "20260718T180000";
       const endDate = "20260718T230000";
-      const location = "Escola de dança, ARTE EM MOVIMENTO";
-      const details =
-        "És nosso convidado especial!%0A%0ARegras:%0A• Vir vestido de branco.%0A• Teremos cerveja, sidra, refrigerantes e água disponíveis.%0A%0Se quiseres beber algo diferente, fica por tua conta 😉";
+
+      const location = "Escola de Dança ARTE EM MOVIMENTO";
+
+      const details = `
+Estás convidado para celebrar comigo este momento especial.
+
+Dress code: branco obrigatório.
+
+Haverá cerveja, sidra, refrigerantes e água disponíveis.
+Se quiser beber algo diferente, fica por tua conta.
+
+Localização:
+https://maps.app.goo.gl/GAPafW21fNis3mdLA
+`;
 
       const calendarUrl =
-        `https://www.google.com/calendar/render?action=TEMPLATE` +
-        `&text=${encodeURIComponent(title)}` +
-        `&dates=${startDate}/${endDate}` +
-        `&location=${encodeURIComponent(location)}` +
-        `&details=${details}`; // details with %0A, not double-encoded
+        "https://www.google.com/calendar/render?action=TEMPLATE" +
+        "&text=" + encodeURIComponent(title) +
+        "&dates=" + startDate + "/" + endDate +
+        "&location=" + encodeURIComponent(location) +
+        "&details=" + encodeURIComponent(details);
 
-      window.open(calendarUrl, "_blank", "width=800,height=600");
+      window.location.href = calendarUrl;
+
     }
+
   </script>
+
 </body>
 
 </html>
