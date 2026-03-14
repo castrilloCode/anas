@@ -24,6 +24,8 @@ h1 {
   color: #ffffff;
   font-size: 1.8em;
   margin: 10px 0;
+  text-shadow: 0 0 5px #000;
+
 }
 
 h2 {
